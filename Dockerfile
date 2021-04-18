@@ -1,5 +1,5 @@
 FROM centos
 RUN yum install httpd -y
-COPY /root/website /var/www/html
+COPY ./* /var/www/html
 CMD /usr/sbin/httpd -DFOREGROUND
 EXPOSE 80
